@@ -188,7 +188,7 @@ class AddVC: UIViewController, PHPickerViewControllerDelegate, UICollectionViewD
         
         
         
-        let productBody = Product.Create(records: [.init(fields: .init(name: productName, category: category, isbn: isbn, selling_price: sellingPrice, purchase_price: purchasePrice, wholesale_price: approval, profit: profit, platform_price: platformPrice, japen_price: japanPrice, shelf_number: productNo, specification: specification, inventory: count, product_description: productDescription, brand_no: codeName, brand_name: manufacturerName, phone_number: phoneNumber, note: note, photos: [ImageData.init(url: (imageURL ?? URL(string: "https://i.imgur.com/DfaKczq.png"))!)]))])
+        let productBody = Product.Create(records: [.init(fields: .init(name: productName, category: category, isbn: isbn, selling_price: sellingPrice, purchase_price: purchasePrice, wholesale_price: approval, profit: profit, platform_price: platformPrice, japan_price: japanPrice, shelf_number: productNo, specification: specification, inventory: count, product_description: productDescription, brand_no: codeName, brand_name: manufacturerName, phone_number: phoneNumber, note: note, photos: [ImageData.init(url: (imageURL ?? URL(string: "https://i.imgur.com/DfaKczq.png"))!)]))])
         
         let url = URL(string: "https://api.airtable.com/v0/appjIlXjle9FOzU0c/Rabbit")!
         var request = URLRequest(url: url)

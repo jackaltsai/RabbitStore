@@ -26,7 +26,7 @@ struct Product: Equatable{
             let wholesale_price: Int? // 批發價
             let profit: Int? // 利潤
             let platform_price: Int? // 平台售價
-            let japen_price: Int? // 日幣價格
+            let japan_price: Int? // 日幣價格
             let shelf_number: String? // 貨架編號
             let specification: String? // 規格
             let inventory: Int? // 庫存數量
@@ -54,7 +54,7 @@ struct Product: Equatable{
             let wholesale_price: Int? // 批發價
             let profit: Int? // 利潤
             let platform_price: Int? // 平台售價
-            let japen_price: Int? // 日幣價格
+            let japan_price: Int? // 日幣價格
             let shelf_number: String? // 貨架編號
             let specification: String? // 規格
             let inventory: Int? // 庫存數量
