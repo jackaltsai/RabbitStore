@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2FI-kU-waA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Rsb-tM-02L">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2FI-kU-waA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QgO-kb-hIe">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vvR-hK-MTu" kind="relationship" relationship="viewControllers" id="sao-je-4rW"/>
+                        <segue destination="tQB-C7-NMB" kind="relationship" relationship="viewControllers" id="kU3-n4-nk3"/>
+                        <segue destination="LlP-Kp-pTN" kind="relationship" relationship="viewControllers" id="Qz2-sF-6w3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9LI-AC-JAl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="550.72463768115949" y="122.54464285714285"/>
+        </scene>
+        <!--User-->
+        <scene sceneID="BeA-j8-v5z">
+            <objects>
+                <viewControllerPlaceholder storyboardName="User" id="vvR-hK-MTu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="User" image="person" catalog="system" id="cM2-cJ-REv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yri-Uw-Keb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1460" y="254"/>
+        </scene>
+        <!--Products-->
+        <scene sceneID="x9g-mD-zhx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Products" id="tQB-C7-NMB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="List" image="list.dash" catalog="system" id="CVB-2J-9FK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kbO-kr-198" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1460.8695652173915" y="122.54464285714285"/>
+        </scene>
+        <!--NewProduct-->
+        <scene sceneID="4ep-gm-twU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NewProduct" id="LlP-Kp-pTN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="New" image="list.bullet.rectangle" catalog="system" id="rNW-ZQ-Xcn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fKa-fv-qhZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1460" y="6"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+    </resources>
+</document>

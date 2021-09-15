@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2FI-kU-waA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Rsb-tM-02L">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2FI-kU-waA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QgO-kb-hIe">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vvR-hK-MTu" kind="relationship" relationship="viewControllers" id="sao-je-4rW"/>
+                        <segue destination="tQB-C7-NMB" kind="relationship" relationship="viewControllers" id="kU3-n4-nk3"/>
+                        <segue destination="Hr0-oq-wax" kind="relationship" relationship="viewControllers" id="Qz2-sF-6w3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9LI-AC-JAl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="550.72463768115949" y="122.54464285714285"/>
+        </scene>
+        <!--User-->
+        <scene sceneID="BeA-j8-v5z">
+            <objects>
+                <viewControllerPlaceholder storyboardName="User" id="vvR-hK-MTu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="cM2-cJ-REv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yri-Uw-Keb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1419" y="964"/>
+        </scene>
+        <!--AddVC-->
+        <scene sceneID="V0f-G1-i4e">
+            <objects>
+                <viewController id="uoH-JE-4kv" customClass="AddVC" customModule="RabbitStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zC8-WW-NMS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="upM-fe-Qyd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hnK-Vs-mbe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9s-py-Adq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2473.913043478261" y="-274.55357142857139"/>
+        </scene>
+        <!--Products-->
+        <scene sceneID="x9g-mD-zhx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Products" id="tQB-C7-NMB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="CVB-2J-9FK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kbO-kr-198" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1460.8695652173915" y="122.54464285714285"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="pIr-Q2-Udh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hr0-oq-wax" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="6Yu-iJ-h9q"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zxI-02-3Xj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uoH-JE-4kv" kind="relationship" relationship="rootViewController" id="Cc7-FL-Wtc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GsP-5V-zkw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1563.768115942029" y="-274.55357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
